@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="Book" table="book">
+		<id name="id" column="id" type="long">
+			<generator class="native"/>
+		</id>
+		<property name="title" column="title" type="string"/>
+		<property name="totalPages" column="total_pages" type="int"/>
+	</class>
+</hibernate-mapping>
